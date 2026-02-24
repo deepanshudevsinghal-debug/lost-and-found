@@ -1,12 +1,69 @@
-# Lost & Found Project
+# 🔎 Lost & Found Web Application
 
-A premium, modern web application for reporting and finding lost items.
+A fully functional and responsive **Lost & Found Website** built using **HTML, CSS, and JavaScript**.  
+This platform allows users to report lost items and post found items with an interactive UI for enhanced user experience.
 
-## How to Run
+---
 
-1.  Simply open the `index.html` file in your web browser.
-    -   You can double-click the file in your file explorer.
-    -   Or right-click and select "Open with" -> Google Chrome / Edge / Firefox.
+## 🚀 Live Demo
+ https://deepanshudevsinghal-debug.github.io/lost-and-found/
+
+---
+
+## 📌 Features
+
+- ✅ Post Lost Items
+- ✅ Post Found Items
+- ✅ Dynamic item display
+- ✅ Form validation
+- ✅ Dark Mode / Light Mode toggle
+- ✅ Responsive design (Mobile + Tablet + Desktop)
+- ✅ Clean and user-friendly interface
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5** – Website structure
+- **CSS3** – Styling and Theme Switching
+- **JavaScript (Vanilla JS)** – Logic and DOM manipulation
+- Local Storage (if used)
+
+---
+
+## 🧠 How It Works
+
+- Users can submit details of lost or found items through a form.
+- JavaScript dynamically displays submitted items on the page.
+- Form validation ensures correct data input.
+- Theme toggle button switches between Light and Dark modes using CSS class manipulation.
+- Responsive layout ensures proper viewing across devices.
+
+---
+
+## 📂 Project Structure
+
+lost-and-found/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I improved my understanding of:
+
+- DOM Manipulation
+- Event Handling
+- Form Validation
+- Dynamic Content Rendering
+- Theme Switching Logic
+- Responsive Web Design
+
+---
 
 ## Features
 
@@ -19,3 +76,23 @@ A premium, modern web application for reporting and finding lost items.
 ## Note
 
 Since this is a client-side only application, the data is stored in your browser's `localStorage`. If you clear your browser data, the items will be removed.
+
+## 🌟 Future Improvements
+
+- Add backend integration (Node.js / Database)
+- Add user authentication system
+- Add image upload feature
+- Add search and filter functionality
+
+---
+
+## 💡 Author
+
+**Deepanshu Singhal**  
+Frontend Developer | HTML | CSS | JavaScript
+
+---
+
+⭐ If you like this project, feel free to give it a star!
+
+
