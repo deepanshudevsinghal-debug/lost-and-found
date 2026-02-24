@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found - Reconnect with what matters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Lost<span class="highlight">&</span>Found</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+        </div>
+        <button id="report-btn" class="btn-primary">Report Found Item</button>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Lost something? <br> Let's help you <span class="text-gradient">find it.</span></h1>
+            <p>A community-driven platform to reunite lost items with their owners.</p>
+        </section>
+
+        <section class="gallery-section">
+            <div class="section-header">
+                <h2>Recently Found Items</h2>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search items...">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+            </div>
+            <div id="items-grid" class="items-grid">
+                <!-- Items will be injected here via JS -->
+            </div>
+            <div id="empty-state" class="empty-state hidden">
+                <p>No items found yet. Be the first to report one!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Lost<span class="highlight">&</span>Found</div>
+            <p class="footer-text">Helping people reconnect with their lost belongings.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p class="copyright">&copy; 2023 Lost & Found. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Reporting Item -->
+    <div id="report-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2>Report a Found Item</h2>
+            <form id="report-form">
+                <div class="form-group">
+                    <label for="item-name">What did you find?</label>
+                    <input type="text" id="item-name" required placeholder="e.g., Blue Backpack">
+                </div>
+
+                <div class="form-group">
+                    <label for="item-location">Where did you find it?</label>
+                    <input type="text" id="item-location" required placeholder="e.g., Central Park Bench">
+                </div>
+
+                <div class="form-group">
+                    <label for="item-contact">Contact Info (Email/Phone)</label>
+                    <input type="text" id="item-contact" required placeholder="How can the owner reach you?">
+                </div>
+
+                <div class="form-group">
+                    <label for="item-image">Upload Image</label>
+                    <div class="file-upload-wrapper">
+                        <input type="file" id="item-image" accept="image/*" required>
+                        <div class="file-upload-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                            <span>Click to upload image</span>
+                        </div>
+                        <img id="image-preview" class="hidden" alt="Preview">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Report</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
